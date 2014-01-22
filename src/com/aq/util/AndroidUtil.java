@@ -17,7 +17,7 @@ public class AndroidUtil {
 					new android.content.DialogInterface.OnClickListener() {
 						public void onClick(DialogInterface dialog, int which) {
 							dialog.dismiss();
-							AQapplication.getInstance().exit();
+							EpApplication.getInstance().exit();
 						}
 					});
 			builder.setNegativeButton("取消",
@@ -29,7 +29,7 @@ public class AndroidUtil {
 			builder.create().show();
 		}
 		if (type.equals("2")) {
-			AQapplication.getInstance().exit();
+			EpApplication.getInstance().exit();
 		}
 	}
 

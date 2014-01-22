@@ -2,7 +2,7 @@ package com.aq;
 
 import java.util.Date;
 
-import com.aq.util.AQapplication;
+import com.aq.util.EpApplication;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -15,7 +15,7 @@ public class BaseActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		AQapplication.getInstance().addActivity(this);
+		EpApplication.getInstance().addActivity(this);
 	}
 
 	/**

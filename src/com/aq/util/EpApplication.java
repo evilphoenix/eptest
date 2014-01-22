@@ -10,9 +10,9 @@ import com.baidu.mapapi.map.MKEvent;
 
 import android.widget.Toast;
 
-public class AQapplication extends Application {
+public class EpApplication extends Application {
 	private List<Activity> activityList = new LinkedList<Activity>();
-	private static AQapplication instance;
+	private static EpApplication instance;
 	
 	/*add by zouna*/
 	public boolean m_bKeyRight = true;
@@ -21,9 +21,9 @@ public class AQapplication extends Application {
 	/*add by zouna*/
 	
 	//单例模式中获取唯一的MyApplication实例
-	public static AQapplication getInstance() {
+	public static EpApplication getInstance() {
 		if (null == instance) {
-			instance = new AQapplication();
+			instance = new EpApplication();
 		}
 		return instance;
 	}
@@ -60,11 +60,11 @@ public class AQapplication extends Application {
   	  
   	  public void onGetNetworkState(int iError) {
   	      if (iError == MKEvent.ERROR_NETWORK_CONNECT) {
-  	          Toast.makeText(AQapplication.getInstance().getApplicationContext(), "您的网络出错啦！",
+  	          Toast.makeText(EpApplication.getInstance().getApplicationContext(), "您的网络出错啦！",
   	              Toast.LENGTH_LONG).show();
   	      }
   	      else if (iError == MKEvent.ERROR_NETWORK_DATA) {
-  	          Toast.makeText(AQapplication.getInstance().getApplicationContext(), "输入正确的检索条件！",
+  	          Toast.makeText(EpApplication.getInstance().getApplicationContext(), "输入正确的检索条件！",
   	                  Toast.LENGTH_LONG).show();
   	      }
   	      // ...
@@ -74,9 +74,9 @@ public class AQapplication extends Application {
   	  public void onGetPermissionState(int iError) {
   	      if (iError ==  MKEvent.ERROR_PERMISSION_DENIED) {
   	          //授权Key错误：
-  	          Toast.makeText(AQapplication.getInstance().getApplicationContext(), 
+  	          Toast.makeText(EpApplication.getInstance().getApplicationContext(), 
   	                  "请在 DemoApplication.java文件输入正确的授权Key！", Toast.LENGTH_LONG).show();
-  	          AQapplication.getInstance().m_bKeyRight = false;
+  	          EpApplication.getInstance().m_bKeyRight = false;
   	      }
   	  }
   	}
