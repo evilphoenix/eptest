@@ -1,6 +1,7 @@
-package com.aq;
+package com.ep;
 
-import com.aq.util.AndroidUtil;
+import com.aq.R;
+import com.ep.util.AndroidUtil;
 
 import android.os.Bundle;
 import android.view.KeyEvent;

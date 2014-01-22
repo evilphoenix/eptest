@@ -1,4 +1,6 @@
-package com.aq;
+package com.ep;
+
+import com.aq.R;
 
 import android.os.Bundle;
 import android.util.DisplayMetrics;

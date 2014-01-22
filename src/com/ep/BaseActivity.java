@@ -1,8 +1,8 @@
-package com.aq;
+package com.ep;
 
 import java.util.Date;
 
-import com.aq.util.EpApplication;
+import com.ep.util.EpApplication;
 
 import android.app.Activity;
 import android.content.Intent;
